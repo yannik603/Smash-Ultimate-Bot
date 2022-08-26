@@ -1,3 +1,4 @@
+
 # Smash Ultimate AI
 A [PyTorch](https://pytorch.org/) model that uses reinforcement learning to train an External Smash Ultimate AI.
 ## Setup and Requirements
@@ -5,13 +6,18 @@ A Capture card to set up with the switch dock
 A Bluetooth card to use the Bluetooth Emulator
 [PyTorch](https://pytorch.org/)
 [Tensorflow](https://www.tensorflow.org/install) optional for Tensorboard
-[NXBT](NXBT) Emulates a Bluetooth controller - only works on Linux systems
+[NXBT](https://github.com/Brikwerk/nxbt) Emulates a Bluetooth controller - only works on Linux systems
+
+>Run preview.py to make sure the capture card device number is configured correctly and to check if nxbt can connect to the switch
+>`cap = cv2.VideoCapture(0) #change to 0 or 1 depending on your device`
+
+Run qlearning.py and follow the instructions
 
 ## How it works
-At first, the image is passed and resized
 
 ![Dash then attack](https://github.com/yannik603/Smash-Ultimate-Bot/blob/main/ReadmePics/DashThenAttack.gif)
 
+At first, the image is passed and resized
 The model then takes an action and waits for the end lag of the movement to end.
 
 ![Frame Data](https://github.com/yannik603/Smash-Ultimate-Bot/blob/main/ReadmePics/FrameData.gif)
@@ -28,7 +34,7 @@ The reward the move gets depends on how much dmg, its end lag, and if the move i
  ## To-do list
  
 
- - [ ] Better Reward function
- - [ ] A universal model to detect the characters
+ - [ ] Better Reward function that rewards consecutive combos
+ - [ ] A universal model to detect the characters on all stages
  - [ ] Use an API to get the frame data
  - [ ] Detect the exact percentage that was taken
