@@ -11,8 +11,7 @@ A Bluetooth card to use the Bluetooth Emulator
 >Run preview.py to make sure the capture card device number is configured correctly and to check if nxbt can connect to the switch
 >`cap = cv2.VideoCapture(0) #change to 0 or 1 depending on your device`
 
-Run qlearning.py and follow the instructions
-
+Run qlearning.py and follow the instructions to train your own model
 ## How it works
 
 ![Dash then attack](https://github.com/yannik603/Smash-Ultimate-Bot/blob/main/ReadmePics/DashThenAttack.gif)
