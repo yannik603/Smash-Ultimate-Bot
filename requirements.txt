@@ -5,6 +5,6 @@ opencv_python==4.5.1.48
 Pillow==9.2.0
 pytesseract==0.3.9
 tensorboard==2.5.0
-torch==1.11.0
+torch==1.13.1
 torchsummary==1.5.1
 torchvision==0.12.0
